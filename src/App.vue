@@ -1,26 +1,25 @@
 <template>
-  <div id="app">
-    <RestaurantCard/>
-    
-  </div>
+    <div id="app">
+        <RestaurantRow/>
+    </div>
 </template>
 
 <script>
-  import RestaurantCard from './components/RestaurantCard.vue'
 
-  export default {
-    name: 'App',
-    components: {
-      RestaurantCard
+    import RestaurantRow from './components/RestaurantRow.vue';
+        export default {
+            name: 'App',
+            components: {
+                RestaurantRow,
+        }
     }
-    
-  }
+
 </script>
 
 <style>
-  @import url('./style/reset.css');
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    
-  }
+    @import url('./style/reset.css');
+    #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        padding: 20px;
+    }
 </style>
